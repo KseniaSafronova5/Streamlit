@@ -1,4 +1,3 @@
-# my first app on github
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -80,5 +79,3 @@ else:
     fig_fare = px.box(filtered_df, x='survived', y='fare', 
                       title='Стоимость билета по статусу выживания (0: Не выжил, 1: Выжил)')
     st.plotly_chart(fig_fare, use_container_width=True)
-
-
